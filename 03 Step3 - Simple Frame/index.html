@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device,initial-scale=1.0">
+    <title>Photo</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+
+
+  <body>
+    <nav class="nav">
+       <button class="button-bar" id="barBtn">
+          <i class="fas fa-bars"></i>
+       </button>
+    </nav>
+
+    <div class="nav-modal animation-top" id="nav-modal">
+      <button class="button-close" id="closeBtn"><i class="fa fa-times"></i></button>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Photo</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- COMBAK: header -->
+    <header class="header">
+       <h1>PHOTOLIO</h1>
+       <p> a template made by Sam.</p>
+       <button class="button" id="toogleBtn">Toogle Grid padding</button>
+    </header>
+
+    <!-- COMBAK: Photo -->
+    <main class="container" id="mainCtn">
+      <div class="column">
+        <img src="https://unsplash.it/800/600?image=1006" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/300/400?image=990" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/400/200?image=991" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/600?image=1021" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/600?image=1054" width="100%"  alt="Photo">
+      </div>
+      <div class="column">
+        <img src="https://unsplash.it/800/400?image=1005" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/900?image=1065" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/500?image=1006" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/600?image=991" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/400/600?image=1051" width="100%"  alt="Photo">
+      </div>
+      <div class="column">
+        <img src="https://unsplash.it/800/200?image=1032" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/800/600?image=1038" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/600/500?image=991" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/400/600?image=1051" width="100%"  alt="Photo">
+        <img src="https://unsplash.it/600/800?image=990" width="100%"  alt="Photo">
+      </div>
+
+    </main>
+
+    <!-- COMBAK:  -->
+    <footer class="footer">
+      <p class="iconbar">
+        <i class="fab fa-weixin"></i>
+        <i class="fab fa-qq"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-weibo"></i>
+      </p>
+      <p>
+        Powered by Sam <a class="a" target="_blank" href="www.google.com">www.google.com</a>
+      </p>
+    </footer>
+
+    <script type="text/javascript">
+      var bar = document.getElementById("barBtn");
+
+      var navModal = document.getElementById("nav-modal");
+      var closeBtn = document.getElementById("closeBtn");
+
+      bar.onclick = function(){
+
+        //alert("--------------");
+        navModal.style.display = "block";
+      }
+
+      closeBtn.onclick = function(){
+
+        //alert("--------------");
+        navModal.style.display = "none";
+      }
+
+      //CSS controls padding
+     var toogleBtn = document.getElementById("toogleBtn");
+     var mainCtn = document.getElementById("mainCtn");
+     toogleBtn.onclick = function(){
+        if(mainCtn.className.indexOf("space") > -1)
+        {
+          mainCtn.className = mainCtn.className.replace("space", "")
+        }
+        else{
+          mainCtn.className = mainCtn.className + " space";
+        }
+     }
+
+
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modal Version 2.0</title>
+    <style media="screen">
+      *, *::after, *::before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .shadow4 {
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+      }
+
+      .hover-shadow:hover {
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+      }
+
+      /** Animation Zoom  **/
+      .animate-zoom {
+        -webkit-animation: zoom 0.8s linear;
+        animation: zoom 0.8s  linear;
+      }
+
+      @-webkit-keyframes zoom {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+
+      /** Animation Zoom  **/
+      .animate-zoom-disappear {
+        -webkit-animation: zoom 0.8s linear;
+        animation: zoom-disappear 0.8s  linear;
+      }
+
+      @-webkit-keyframes zoom-disappear {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        to {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+
+      }
+
+      @keyframes zoom-disappear {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        to {
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+
+
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .open-btn {
+        background-color: #000;
+        border: none;
+        color: #fff;
+        padding: 8px 16px;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        font-size: 14px;
+        z-index: 3;
+      }
+
+      .modal {
+        background-color: rgba(0,0,0, 0.3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        overflow: auto;
+        display: none;
+      }
+
+      .modal-dialog {
+        margin: 32px 0;
+      }
+
+      .modal-content {
+        max-width: 888px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 16px;
+        border-radius: 5px;
+      }
+
+      .modal-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      .modal-heading::before, .modal-heading::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .modal-title {
+        font-weight: 400;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+      .close-btn {
+        float: right;
+        border: none;
+        background-color: transparent;
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0;
+      }
+
+      .close-btn:hover {
+        color: #ccc;
+        cursor: pointer;
+      }
+
+      .modal-inner {
+        font-size: 14px;
+      }
+
+      .modal-footer {
+        text-align: right;
+      }
+
+      .close-btn2, .ok-btn {
+        border: none;
+        background-color: transparent;
+        color: #eBBeBe;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="openModal()" class="open-btn hover-shadow">Open Modal</button>
+      <div class="modal">
+        <div class="modal-dialog animate-zoom">
+          <div class="modal-content">
+            <div class="modal-heading">
+              <h2 class="modal-title">Modal Title</h2>
+              <button class="close-btn" onclick="closeModal()">x</button>
+            </div>
+            <div class="modal-inner">
+              <p>Modal verbs are auxiliary verbs (also called helping verbs) like can, will, could, shall, must, would, might, and should. After a modal verb, the root form of a verb is generally used. ... Modal verbs add meaning to the main verb in a sentence by expressing</p>
+              <img src="./imgs/mt01.jpg" width="900px" height="500px" class="" alt="Mountains">
+              <p>Here’s a tip: Want to make sure your writing always looks great? Grammarly can save you from misspellings, grammatical and punctuation mistakes, and other writing issues on all your favorite websites.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="close-btn2" onclick="closeModal()">close</button>
+              <button class="ok-btn" onclick="closeModal()">OK</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <script type="text/javascript">
+        function openModal() {
+          modal = document.getElementsByClassName('modal');
+          modal[0].style.display = 'block';
+        }
+
+        function closeModal() {
+          modal = document.getElementsByClassName('modal');
+          modalDialog = document.getElementsByClassName('modal-dialog');
+
+          modalDialog[0].className = 'modal-dialog' + ' animate-zoom-disappear';
+
+          setTimeout (function(){
+            modalDialog[0].className = 'modal-dialog' + ' animate-zoom';
+            modal[0].style.display = 'none';
+          }, 800);
+          //modal[0].style.display = 'none';
+
+        }
+      </script>
+
+    </div>
+  </body>
+</html>

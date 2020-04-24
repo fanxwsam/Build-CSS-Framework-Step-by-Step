@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Animation</title>
+    <style media="screen">
+      /** COMBAK: Top    **/
+      .animate-top {
+        position: relative;
+        -webkit-animation: top 0.6s;
+        animation: top 0.6s;
+      }
+
+      @-webkit-keyframes top {
+        from {
+          top: -100px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes top {
+        from {
+          top: -100px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+
+     /** COMBAK: Bottom    **/
+      .animate-bottom {
+        position: relative;
+        -webkit-animation: bottom 2s;
+        animation: bottom 2s;
+      }
+
+      @-webkit-keyframes bottom {
+        from {
+          bottom: -300px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes bottom {
+        from {
+          bottom: -300px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+/** COMBAK: Left    **/
+      .animate-left {
+        position: relative;
+        -webkit-animation: left 2s;
+        animation: left 2s;
+      }
+
+      @-webkit-keyframes left {
+        from {
+          left: -300px;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes left {
+        from {
+          left: -300px;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+
+      /** COMBAK: :right    **/
+      .animate-right {
+        position: relative;
+        -webkit-animation: right 2s;
+        animation: right 2s;
+      }
+
+      @-webkit-keyframes right {
+        from {
+          right: -1300px;
+          opacity: 0;
+        }
+        to {
+          right: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes right {
+        from {
+          right: -1300px;
+          opacity: 0;
+        }
+        to {
+          right: 0;
+          opacity: 1;
+        }
+      }
+
+      /** COMBAK: Opacity    **/
+      .animate-opacity {
+        -webkit-animation: opacity1 5s;
+        animation: opacity1 5s;
+      }
+
+      @-webkit-keyframes opacity1 {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes opacity1 {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /** animation infinite  **/
+      .animate-fading {
+        -webkit-animation: fading 5s infinite;
+        animation: fading 5s infinite;
+      }
+
+      @-webkit-keyframes fading {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fading {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+    /** Animation Spin  **/
+    .animate-spin {
+      -webkit-animation: spin 1s infinite linear;
+      animation: spin 1s infinite linear;
+    }
+
+    @-webkit-keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+
+    /** Animation Zoom  **/
+    .animate-zoom {
+      -webkit-animation: zoom 15s infinite linear;
+      animation: zoom 15s infinite linear;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="animate-top1">Animation Top</h1>
+
+    <h1 class="animate-bottom">Animation Bottom</h1>
+
+    <h1 class="animate-left">Animation Left</h1>
+
+    <h1 class="animate-right">Animation Right</h1>
+
+    <br>
+
+    <h1 class="animate-opacity">Animation Opacity</h1>
+    <img src="https://unsplash.it/400/200?image=991" class="animate-opacity"   alt="Photo">
+
+    <br>
+    <h1 class="animate-fading">Animation Opacity</h1>
+    <img src="https://unsplash.it/400/600?image=1051"  class="animate-fading"  alt="Photo">
+
+    <br>
+    <h1>Animation Spin</h1>
+    <span><i class="fa fa-spinner animate-spin" style="font-size: 80px;"> </i></span>
+    <br>
+    <h1>Animation Zoom</h1>
+    <img src="https://unsplash.it/400/600?image=1051" class="animate-zoom"  alt="Photo">
+  </body>
+</html>

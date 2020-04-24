@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- COMBAK: Nav -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- COMBAK: Content -->
+    <main class="content1">
+      <header class="header">
+        <h1>LOGO</h1>
+      </header>
+
+      <!-- COMBAK: Slider -->
+      <div class="slider-box">
+        <div class="slider">
+          <img src="./imgs/mt01.jpg" width="1000" height="350" alt="Mountains">
+          <div class="left-top">
+            <span class="tag animate-bottom">Calm Blue River</span>
+          </div>
+        </div>
+
+        <div class="slider" style="display: none">
+          <img src="./imgs/mt02.jfif" width="1000" height="550" alt="Mountains">
+          <div class="middle">
+            <span class="tag animate-bottom">Good Palac</span>
+          </div>
+        </div>
+
+        <div class="slider" style="display: none">
+          <img src="./imgs/mt03.jpg" width="1000" height="550" alt="Mountains">
+          <div class="right-top">
+            <span class="tag animate-bottom">Hmalas Mount</span>
+          </div>
+        </div>
+
+        <div class="tool-bar">
+          <div class="row">
+            <div class="col s1">
+              <span class="page-btn" onclick="changePage(-1)"><i class="fa  fa-chevron-circle-left"></i></span>
+            </div>
+
+            <div class="col s10">
+              <div class="center-align">
+                <span class="dots active" onclick="change(1)"></span>
+                <span class="dots"  onclick="change(2)"></span>
+                <span class="dots" onclick="change(3)"></span>
+              </div>
+            </div>
+
+            <div class="col s1">
+              <div class="right-align">
+                <span class="page-btn" onclick="changePage(1)"><i class="fa  fa-chevron-circle-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMBAK: Service start-->
+      <div id="service" class="service">
+        <div class="center-align">
+          <h2 class="bottom-bar">Services</h2>
+        </div>
+        <div class="row">
+          <div class="col s3 m6">
+            <div class="box-1">
+              <h3>Retezat National Park</h3>
+              <p>Romania's national and natural parks, displaying a unique variety of landscapes, vegetation and wildlife, protect some of the largest remaining areas of pristine forest in Europe. Grasslands, gorges, subterranean caves, volcanic lakes, and extensive river network </p>
+            </div>
+          </div>
+          <div class="col s3 m6">
+            <div class="box-2">
+              <h3>Sighisoara - City Highlights</h3>
+              <p>The origins of Sighisoara city go back to the Roman times. During the First Century AD, the Dacians (ancient inhabitants of the territory of modern Romania which eventually will develop into the Romanian people), built a fortification called Sandava.The origins of Sighisoara city.</p>
+            </div>
+          </div>
+          <div class="col s3 m6">
+            <div class="box-3">
+              <h3>Retezat National Park</h3>
+              <p>Romania's national and natural parks, displaying a unique variety of landscapes, vegetation and wildlife, protect some of the largest remaining areas of pristine forest in Europe. Grasslands, gorges, subterranean caves, volcanic lakes, and extensive river network </p>
+            </div>
+          </div>
+          <div class="col s3 m6">
+            <div class="box-4">
+              <h3>Retezat National Park</h3>
+              <p>Romania's national and natural parks, displaying a unique variety of landscapes, vegetation and wildlife, protect some of the largest remaining areas of pristine forest in Europe. Grasslands, gorges, subterranean caves, volcanic lakes, and extensive river network </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- COMBAK: Serice end -->
+
+      <!-- COMBAK:  Price start-->
+      <div id="price" class="price">
+        <div class="center-align">
+          <h2 class="bottom-bar">Prices</h2>
+        </div>
+
+        <div class="row">
+          <div class="col s4 l12">
+            <div class="card-box">
+              <ul class="card-list">
+                <li class="list-header"><h3>Basic</h3></li>
+                <li>Height <b>3,498 M</b></li>
+                <li>Color</li>
+                <li>Water</li>
+                <li>Climate</li>
+                <li>
+                  <h2>Season</h2>
+                  <p>Each Month</p>
+                </li>
+                <li class="footer">
+                  <button class="button">Buy</button>
+                </li>
+              </div>
+            </div>
+
+            <div class="col s4 l12">
+              <div class="card-box">
+                <ul class="card-list">
+                  <li class="list-header"><h3>Professional</h3></li>
+                  <li>Height <b>3,498 M</b></li>
+                  <li>Color</li>
+                  <li>Water</li>
+                  <li>Climate</li>
+                  <li>
+                    <h2>Season</h2>
+                    <p>Each Month</p>
+                  </li>
+                  <li class="footer">
+                    <button class="button">Buy</button>
+                  </li>
+                </div>
+              </div>
+
+              <div class="col s4 l12">
+                <div class="card-box">
+                  <ul class="card-list">
+                    <li class="list-header"><h3>Advanced</h3></li>
+                    <li>Height <b>3,498 M</b></li>
+                    <li>Color</li>
+                    <li>Water</li>
+                    <li>Climate</li>
+                    <li>
+                      <h2>Season</h2>
+                      <p>Each Month</p>
+                    </li>
+                    <li class="footer">
+                      <button class="button">Buy</button>
+                    </li>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- COMBAK:  Price end-->
+
+
+      <!-- COMBAK: About start -->
+      <div id="about">
+        <div class="center-align">
+          <h2 class="bottom-bar">About</h2>
+        </div>
+
+        <div class="row">
+            <div class="col s4 l12">
+              <div class="card-box">
+                <div class="card">
+                  <img src="http://images.freehdw.com/800/lee-pace-man-smile-face-actor.jpg" alt="Jean Masio">
+                  <div class="card-content">
+                    <h2>Jean Masio</h2>
+                    <p>Yu Shan or Yushan, also known as Mount Jade, Jade Mountain, or Mount Yu, is the highest mountain on Taiwan at 3,952 m (12,966 ft) above sea level, giving Taiwan.</p>
+                    <button class="button">Contact</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col s4 l12">
+              <div class="card-box">
+                <div class="card">
+                  <img src="http://data.freehdw.com/amazing-green-eyes.jpg" alt="Jean Masio">
+                  <div class="card-content">
+                  <h2>Jean Masio</h2>
+                  <p>Yu Shan or Yushan, also known as Mount Jade, Jade Mountain, or Mount Yu, is the highest mountain on Taiwan at 3,952 m (12,966 ft) above sea level, giving Taiwan.</p>
+                  <button class="button">Contact</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4 l12">
+              <div class="card-box">
+                <div class="card">
+                  <img src="http://data.freehdw.com/tom-hiddleston-actor-face-photo-shoot-smile.jpg" alt="Jean Masio">
+                  <div class="card-content">
+                    <h2>Jean Masio</h2>
+                    <p>Yu Shan or Yushan, also known as Mount Jade, Jade Mountain, or Mount Yu, is the highest mountain on Taiwan at 3,952 m (12,966 ft) above sea level, giving Taiwan.</p>
+                    <button class="button">Contact</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+      </div>
+      <!-- COMBAK: About end -->
+
+      <!-- COMBAK: Contact start -->
+      <div id="contact">
+        <div class="center-align">
+          <h2 class="bottom-bar">Contact</h2>
+        </div>
+
+        <form class="" action="index.html" method="post">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" value="">
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" value="">
+          <label for="content">Content: </label>
+          <input type="text" id="content" name="content" value="">
+          <button class="button">Submit</button>
+        </form>
+
+      </div>
+      <!-- COMBAK: Contact end -->
+
+
+    </main>
+
+    <!-- COMBAK: Footer -->
+    <footer class="footer">
+      <p class="icon-bar">
+        <a href="#"><i class="fa fa-weixin"></i></a>
+        <a href="#"><i class="fa fa-weibo"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-qq"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </p>
+      <p>Powered by <a href="www.google.com" target="#">www.google.com</a></p>
+    </footer>
+
+
+
+
+  </body>
+</html>

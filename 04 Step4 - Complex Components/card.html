@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card</title>
+    <style media="screen">
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(101,101, 104);
+        margin: 200px auto;
+      }
+
+      .shadow1 {
+        box-shadow: 10px 10px 30px;
+      }
+
+      .shadow2 {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.16), 0 2px 10px 0 rgba(0,0,0, 0.12) ;
+        -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.16), 0 2px 10px 0 rgba(0,0,0, 0.12) ;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.16), 0 2px 10px 0 rgba(0,0,0, 0.12) ;
+      }
+
+      .shadow4 {
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+      }
+
+      .text-shadow {
+        color: rgb(76, 166, 118);
+        text-shadow: -2px 0 #000, 2px 0 #000, 0 -1px #000, 0 1px #000;
+      }
+
+      .hover-shadow:hover {
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1 class="text-shadow">Hello</h1>
+    <div class="container hover-shadow">
+
+    </div>
+    <img src="./imgs/mt01.jpg" width="600px" height="300px" class="shadow4" alt="Mountains">
+  </body>
+</html>

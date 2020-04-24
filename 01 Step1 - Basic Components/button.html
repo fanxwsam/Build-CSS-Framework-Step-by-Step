@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Button</title>
+
+    <style media="screen">
+      .button {
+        display: inline-block;
+        border: none;
+        background-color: #333;
+        color:#fff;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .radius {
+        border-radius: 70%;
+      }
+
+      .shadow {
+        --webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5)
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5)
+      }
+
+      .border {
+        border: 2px solid #000;
+        background-color: transparent;
+        color: red;
+      }
+
+      .hhhover {
+        transition: all 0.4s;
+      }
+
+      .hhhover:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .group .item {
+        float: left;
+        border-right: solid 1px blue;
+      }
+
+      .group .item:last-child {
+        border-right: none;
+      }
+
+      .group .item:hover {
+        opacity: 0.7;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <button class="button" type="button" name="button">Button</button>
+    <button class="button radius" type="button" name="button">Button</button>
+    <button class="button border hhhover" type="button" name="button">border</button>
+    <button class="button shadow" type="button" name="button">Button55555555555555555555555555</button>
+    <br>
+    <br>
+    <br>
+    <h1>Button Groups</h1>
+
+    <div class="group">
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+    </div>
+
+
+  </body>
+</html>

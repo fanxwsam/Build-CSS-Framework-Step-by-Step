@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Modal</title>
+    <style media="screen">
+      .nav-img:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+
+      .modal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 1;
+      }
+
+      .bar {
+        text-align: right;
+        padding: 8px 16px;
+      }
+
+      .close-btn {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .close-btn:hover {
+        color: #ccc;
+        cursor: pointer;
+      }
+
+      .modal-inner{
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+
+      .modal-inner img {
+        width: 100%;
+        heidht: auto;
+      }
+
+      .shadow4 {
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        -moz-box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0, 0.2), 0 4px 20px 0 rgba(0,0,0, 0.19) ;
+      }
+
+      /** Animation Zoom  **/
+      .animate-zoom {
+        -webkit-animation: zoom 0.8s linear;
+        animation: zoom 0.8s  linear;
+      }
+
+      @-webkit-keyframes zoom {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./imgs/mt01.jpg" width="400px" height="200px" class="nav-img" alt="Mountains" onclick="bigerImg()">
+      <div class="modal" style="display: none">
+        <div class="modal-dialog">
+          <div class="bar">
+            <button class="close-btn" onclick="closeModal()">X</button>
+          </div>
+          <div class="modal-inner">
+            <img src="./imgs/mt01.jpg" width="1800px" height="500px" class="shadow4 animate-zoom" alt="Mountains">
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        function bigerImg(){
+            var modal = document.getElementsByClassName('modal');
+            modal[0].style.display = 'block';
+        }
+
+        function closeModal() {
+          var modal = document.getElementsByClassName('modal');
+          modal[0].style.display = 'none';
+        }
+      </script>
+    </div>
+  </body>
+</html>

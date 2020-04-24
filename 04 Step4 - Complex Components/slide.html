@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slider Show</title>
+    <style media="screen">
+
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .row::after, .row::before {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
+
+      .row::after, .row::before {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .col {
+        float: left;
+      }
+
+      .s1{width: 8.33%;}
+      .s2{width: 16.66%;}
+      .s3{width: 25%;}
+      .s4{width: 33.33%;}
+      .s5{width: 41.66%;}
+      .s6{width: 50%;}
+      .s7{width: 58.33%;}
+      .s8{width: 66.66%;}
+      .s9{width: 75%;}
+      .s10{width: 83.33%;}
+      .s11{width: 91.66%;}
+      .s12{width: 100%;}
+
+      @media only screen and (max-width: 993px) {
+        .m1{width: 8.33%;}
+        .m2{width: 16.66%;}
+        .m3{width: 25%;}
+        .m4{width: 33.33%;}
+        .m5{width: 41.66%;}
+        .m6{width: 50%;}
+        .m7{width: 58.33%;}
+        .m8{width: 66.66%;}
+        .m9{width: 75%;}
+        .m10{width: 83.33%;}
+        .m11{width: 91.66%;}
+        .m12{width: 100%;}
+      }
+
+      @media only screen and (max-width: 600px) {
+        .l1{width: 8.33%;}
+        .l2{width: 16.66%;}
+        .l3{width: 25%;}
+        .l4{width: 33.33%;}
+        .l5{width: 41.66%;}
+        .l6{width: 50%;}
+        .l7{width: 58.33%;}
+        .l8{width: 66.66%;}
+        .l9{width: 75%;}
+        .l10{width: 83.33%;}
+        .l11{width: 91.66%;}
+        .l12{width: 100%;}
+      }
+
+
+
+      .relative-container {
+        position: relative;
+      }
+
+      #container {
+        width: 600px;
+        height: 300px;
+        background-color: #444;
+        color: #fff;
+      }
+
+
+
+      .top-left {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #309759;
+      }
+
+      .top-middle {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        background-color: #309759;
+        transform: translate(-50%, 0);
+      }
+
+      .top-right {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        background-color: #309759;
+      }
+
+      .middle-left {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        background-color: #309759;
+        transform: translate(0, -50%);
+      }
+
+
+      .middle-middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: #309759;
+        transform: translate(-50%, 0);
+      }
+
+
+      .middle-right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background-color: #309759;
+        transform: translate(0, -50%);
+
+      }
+
+
+      .bottom-left {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #309759;
+      }
+
+
+      .bottom-middle {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        background-color: #309759;
+        transform: translate(-50%, 0);
+      }
+
+
+      .bottom-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #309759;
+
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+
+      .relative-container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
+      /** COMBAK: Opacity    **/
+      .animate-opacity {
+        -webkit-animation: opacity1 1s;
+        animation: opacity1 1s;
+      }
+
+      @-webkit-keyframes opacity1 {
+        from {
+          opacity: 0.2;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes opacity1 {
+        from {
+          opacity: 0.2;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /** animation infinite  **/
+      .animate-fading {
+        -webkit-animation: fading 3s;
+        animation: fading 3s;
+      }
+
+      @-webkit-keyframes fading {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+
+      @keyframes fading {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+
+      .container1 {
+        max-width: 600px;
+      }
+
+
+
+      .button {
+        border: none;
+        color: #fff;
+        background-color: #444;
+        padding: 8px 10px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .button:hover {
+        background-color: #ccc;
+        color: #000;
+      }
+
+
+      .container2{
+         width:600px;
+
+      }
+
+      .container2 img {
+        cursor: pointer;
+      }
+
+      .zoom-padding{
+        padding: 4px;
+      }
+
+      .slide-zoom-img {
+        opacity: 0.7;
+      }
+
+      .container3 {
+        background-color: #454629;
+        width: 600px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Slide Manually -->
+    <h1>Manually</h1>
+    <div class="container1 relative-container">
+      <img src="./imgs/mt01.jpg" width="600px" height="300px" class="slide-img" alt="Mountains">
+      <img src="./imgs/mt02.jfif" width="600px" height="300px" class="slide-img" alt="Mountains" style="display: none">
+      <img src="./imgs/mt03.jpg" width="600px" height="300px" class="slide-img" alt="Mountains" style="display: none">
+      <button class="button middle-left" onclick="page(-1)">&#60;</button>
+      <button class="button middle-right" onclick="page(1)">&#62;</button>
+
+      <script type="text/javascript">
+        var index = 1;
+        function page(n) {
+          slideImgs = document.getElementsByClassName("slide-img");
+          for(var i=0; i<slideImgs.length; i++){
+            slideImgs[i].style.display = 'none';
+          }
+
+          if(n == -1){
+            index = index - 1;
+            if(index < 1)
+            {
+              index = 3;
+            }
+          }else {
+            index = index + 1;
+            if(index > 3)
+            {
+              index = 1;
+            }
+          }
+
+          slideImgs = document.getElementsByClassName("slide-img");
+          slideImgs[index-1].style.display = 'block';
+        }
+      </script>
+    </div>
+
+
+    <h1>Zoom Imgages</h1>
+    <div class="container2">
+      <img src="./imgs/mt01.jpg" width="600px" height="300px" class="slide-img2" alt="Mountains">
+      <img src="./imgs/mt02.jfif" width="600px" height="300px" class="slide-img2"  style="display:none" alt="Mountains"  >
+      <img src="./imgs/mt03.jpg" width="600px" height="300px" class="slide-img2"  style="display:none" alt="Mountains"  >
+
+      <div class="row">
+        <div class="col s4">
+            <img src="./imgs/mt01.jpg" width="200px" height="100px" class="slide-zoom-img zoom-padding" onclick="pageZoom(1)" alt="Mountains">
+        </div>
+        <div class="col s4">
+            <img src="./imgs/mt02.jfif" width="200px" height="100px" class="slide-zoom-img zoom-padding" onclick="pageZoom(2)" alt="Mountains">
+        </div>
+        <div class="col s4">
+            <img src="./imgs/mt03.jpg" width="200px" height="100px" class="slide-zoom-img zoom-padding" onclick="pageZoom(3)" alt="Mountains">
+        </div>
+      </div>
+      <script type="text/javascript">
+
+        function pageZoom(n) {
+
+          slideImgs = document.getElementsByClassName("slide-img2");
+          for(var i=0; i<slideImgs.length; i++){
+            slideImgs[i].style.display = 'none';
+          }
+
+          slideImgs = document.getElementsByClassName("slide-img2");
+          slideImgs[n-1].style.display = 'block';
+          slideImgs[n-1].className = slideImgs[n-1].className + ' animate-opacity';
+        }
+
+        var index2 = 1;
+        var slideImgs2 = document.getElementsByClassName("slide-img2");
+        for(var i=0; i<slideImgs2.length; i++){
+          pageZoom(index2);
+          index2++;
+        }
+
+
+      </script>
+    </div>
+
+    <h1>Automatic Slides</h1>
+    <div class="container3">
+      <img src="./imgs/mt01.jpg" width="600px" height="300px" class="slide-img3" alt="Mountains">
+      <img src="./imgs/mt02.jfif" width="600px" height="300px" class="slide-img3"  style="display:none" alt="Mountains"  >
+      <img src="./imgs/mt03.jpg" width="600px" height="300px" class="slide-img3"  style="display:none" alt="Mountains"  >
+      <script type="text/javascript">
+
+        var imgIndex = 1;
+
+        autoPlay();
+
+        function autoPlay()
+        {
+
+          slideImgs = document.getElementsByClassName("slide-img3");
+          for(var i=0; i<slideImgs.length; i++){
+            slideImgs[i].style.display = 'none';
+          }
+
+
+          if(imgIndex > 3){
+            imgIndex = 1;
+          }
+
+          slideImgs = document.getElementsByClassName("slide-img3");
+          slideImgs[imgIndex-1].style.display = 'block';
+          slideImgs[imgIndex-1].className = slideImgs[imgIndex-1].className + ' animate-fading';
+
+          imgIndex++;
+          setTimeout(autoPlay, 3000);
+
+        }
+
+
+      </script>
+    </div>
+
+
+  </body>
+</html>

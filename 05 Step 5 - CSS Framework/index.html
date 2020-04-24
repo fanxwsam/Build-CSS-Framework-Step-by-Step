@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css">
+
+    <title>My Home Page</title>
+  </head>
+
+  <body>
+    <nav class="top">
+      <ul class="nav nav-h  black">
+        <li ><a href="#" class="text-lightgray large hover-lightgray"><i class="fa fa-home margin-right"></i> Logo</a></li>
+        <li class="hide-small"><a href="#" class="text-lightgray large hover-lightgray"><i class="fa fa-firefox"></i></a></li>
+        <li class="hide-small"><a href="#" class="text-lightgray large hover-lightgray" ><i class="fa fa-envelope"></i></a></li>
+        <li class="hide-small"><a href="#" class="text-lightgray large hover-lightgray"><i class="fa fa-user"></i></a></li>
+
+        <li class="dropdown hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray"><i class="fa fa-bell"></i><sup class="sup red">3</sup></a>
+          <div class="dropdown-content">
+            <a href="#">3 Likes</a>
+            <a href="#">2 New Comments</a>
+            <a href="#">3 New Friends</a>
+          </div>
+        </li>
+
+        <li class="right hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray">
+             <img src="./imgs/mt01.jpg" width="25" height="25" class="circle" alt="author">
+          </a>
+        </li>
+
+        <li class="hide-medium hide-large right">
+          <a href="#" data-toggle="menu" class="text-lightgray large hover-black">
+             <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul data-target="menu" class="nav hide-medium hide-large black mobile" style="display:none">
+        <li><a href="#" class="text-lightgray  hover-lightgray center">Link</a></li>
+        <li><a href="#" class="text-lightgray  hover-lightgray center">Link</a></li>
+        <li><a href="#" class="text-lightgray  hover-lightgray center">Link</a></li>
+      </ul>
+
+    </nav>
+
+
+    <main class="margin-top-64 padding-tb">
+      <div class="row-padding">
+        <div class="col l3 m3 s12 ">
+          <div class="round shadow padding margin-bottom-24">
+            <p class="center">My Home Page</p>
+            <div class="center">
+              <img src="./imgs/mt01.jpg" width="120" height="120" class="circle" alt="author">
+            </div>
+            <hr>
+            <ul class="list padding">
+              <li><i class="fa fa-pencil text-red margin-right"></i>Software Engineer</li>
+              <li><i class="fa fa-map-pin text-red margin-right"></i>Perth, WA</li>
+              <li><i class="fa fa-birthday-cake text-red margin-right"></i>April 1, 1988</li>
+            </ul>
+          </div>
+          <div class="round shadow padding lightred margin-bottom-24">
+            <ul class="list padding">
+              <li><i class="fa fa-pencil text-red margin-right"></i>Software Engineer</li>
+              <li><i class="fa fa-map-pin text-red margin-right"></i>Perth, WA</li>
+              <li><i class="fa fa-birthday-cake text-red margin-right"></i>April 1, 1988</li>
+            </ul>
+          </div>
+          <div class="round shadow padding margin-bottom-24">
+            <span class="tag lightred text-white">New</span>
+            <span class="tag lightblue text-white">www.samfan.com.au</span>
+            <span class="tag lightblue text-white">Travle</span>
+            <span class="tag lightblue text-white">Music</span>
+            <span class="tag lightred text-white">Blog</span>
+            <span class="tag lightblue text-white">Travle</span>
+            <span class="tag lightblue text-white">Music</span>
+            <span class="tag lightred text-white">Blog</span>
+          </div>
+          <div class="round shadow padding margin-bottom-24 lightyellow relative-contaner">
+             <button class="close-btn top-right margin-right-8" onclick="this.parentNode.style.display = 'none';">×</button>
+             <p>Hello!</p>
+             <p>Someone is viewing you...Who is he?</p>
+          </div>
+
+
+        </div>
+        <div class="col l7 m6 s12 ">
+          <div class="round shadow padding margin-bottom-24">
+            <form class="" action="#" method="post">
+              <div class="form-group-label">
+                <label for="post" class="floating-label" >What is new about you?</label>
+                <input type="text" class="form-control" id="post" name="post" value="">
+              </div>
+
+              <div class="right-align padding-tb-16">
+                <button class="button lightred"><i class="fa fa-pencil margin-right-8"></i>Post</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="round shadow padding margin-bottom-24">
+            <div class="container">
+               <img src="./imgs/mt01.jpg" width="60" height="60" class="circle left" alt="author">
+               <span class="right text-grey">1 min</span>
+               <h3>Sam Fan</h3>
+            <br>
+            <hr>
+            <p>The central business district of Perth is bounded by the Swan River to the south and east, with Kings Park on the western end and the railway reserve as the northern border. A state and federally funded project named Perth City Link sank a section of the railway line to allow easy pedestrian access between Northbridge and the CBD. The Perth Arena is a building in the city link area that has received several architectural awards from institutions.</p>
+            </div>
+
+            <div class="row-padding">
+                <div class="col l6 s12 margin-bottom">
+                  <img src="./imgs/perth1.png" class="img " alt="author">
+                </div>
+                <div class="col l6 s12">
+                  <img src="./imgs/perth2.png" class="img margin-bottom" alt="author">
+                </div>
+            </div>
+            <div class="container">
+              <button class="button red"><i class="fa fa-thumbs-up margin-right-8"></i>Like</button>
+              <button class="button"><i class="fa fa-comment margin-right-8"></i>Comments</button>
+            </div>
+          </div>
+
+          <div class="round shadow padding margin-bottom-24">
+            <div class="container">
+               <img src="./imgs/mt01.jpg" width="60" height="60" class="circle left" alt="author">
+               <span class="right text-grey">1 min</span>
+               <h3>Sam Fan</h3>
+            <br>
+            <hr>
+            <p>The central business district of Perth is bounded by the Swan River to the south and east, with Kings Park on the western end and the railway reserve as the northern border. A state and federally funded project named Perth City Link sank a section of the railway line to allow easy pedestrian access between Northbridge and the CBD. The Perth Arena is a building in the city link area that has received several architectural awards from institutions.</p>
+            </div>
+            <div class="container">
+              <button class="button red"><i class="fa fa-thumbs-up margin-right-8"></i>Like</button>
+              <button class="button"><i class="fa fa-comment margin-right-8"></i>Comments</button>
+            </div>
+          </div>
+
+          <div class="round shadow padding margin-bottom-24">
+            <div class="container">
+               <img src="./imgs/mt01.jpg" width="60" height="60" class="circle left" alt="author">
+               <span class="right text-grey">1 min</span>
+               <h3>Sam Fan</h3>
+            <br>
+            <hr>
+            <p>The central business district of Perth is bounded by the Swan River to the south and east, with Kings Park on the western end and the railway reserve as the northern border. A state and federally funded project named Perth City Link sank a section of the railway line to allow easy pedestrian access between Northbridge and the CBD. The Perth Arena is a building in the city link area that has received several architectural awards from institutions.</p>
+            </div>
+
+            <div class="row-padding margin-bottom-24">
+                <div class="col l12 s12 ">
+                  <img src="./imgs/perth3.png" class="img" alt="author">
+                </div>
+
+            </div>
+            <div class="container">
+              <button class="button red"><i class="fa fa-thumbs-up margin-right-8"></i>Like</button>
+              <button class="button"><i class="fa fa-comment margin-right-8"></i>Comments</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col l2 m3 s12 ">
+          <div class="round shadow padding margin-bottom-24">
+            <h4 class="center">The Coming Events</h3>
+            <img src="./imgs/perth3.png" class="img" alt="author">
+            <p class="center">Holiday Feast</p>
+            <p class="center">17:00 Friday</p>
+            <button class="button lightblue center" style="width: 100%" name="button">Details</button>
+          </div>
+          <div class="round shadow padding margin-bottom-24 center">
+            <h4>Friends Request</h3>
+            <img src="./imgs/dt.png" width="80" height="80" class="circle center" alt="author">
+            <p class="center"></p>
+            <p class="center"><i class="fa fa-check-circle text-lightred padding "></i>Donald Trump</p>
+            <div class="row">
+              <button class="button left lightgreen hover-shadow-off hover-lightgrey" style="width:50%">Accept</button>
+              <button class="button left lightred hover-shadow-off hover-lightgrey" style="width:50%">Reject</button>
+            </div>
+          </div>
+          <div class="round shadow padding margin-bottom-24 center">
+            <h4>Friends Request</h3>
+            <img src="./imgs/dt.png" width="80" height="80" class="circle center" alt="author">
+            <p class="center"></p>
+            <p class="center"><i class="fa fa-check-circle text-lightred padding "></i>Donald Trump</p>
+            <div class="row">
+              <button class="button left lightgreen hover-shadow-off hover-lightgrey" style="width:50%">Accept</button>
+              <button class="button left lightred hover-shadow-off hover-lightgrey" style="width:50%">Reject</button>
+            </div>
+          </div>
+          <div class="round shadow padding margin-bottom-24 center">
+            <h4>Friends Request</h3>
+            <img src="./imgs/dt.png" width="80" height="80" class="circle center" alt="author">
+            <p class="center"></p>
+            <p class="center"><i class="fa fa-check-circle text-lightred padding "></i>Donald Trump</p>
+            <div class="row">
+              <button class="button left lightgreen hover-shadow-off hover-lightgrey" style="width:50%">Accept</button>
+              <button class="button left lightred hover-shadow-off hover-lightgrey" style="width:50%">Reject</button>
+            </div>
+          </div>
+          <div class="round shadow padding margin-bottom-24 center">
+            <h4>Friends Request</h3>
+            <img src="./imgs/dt.png" width="80" height="80" class="circle center" alt="author">
+            <p class="center"></p>
+            <p class="center"><i class="fa fa-check-circle text-lightred padding "></i>Donald Trump</p>
+            <div class="row">
+              <button class="button left lightgreen hover-shadow-off hover-lightgrey" style="width:50%">Accept</button>
+              <button class="button left lightred hover-shadow-off hover-lightgrey" style="width:50%">Reject</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- COMBAK: Footer -->
+    <footer class="footer black">
+      <p class="icon-bar">
+        <a href="#"><i class="fa fa-weixin"></i></a>
+        <a href="#"><i class="fa fa-weibo"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-qq"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </p>
+      <p>Powered by <a href="www.google.com" target="#">www.google.com</a></p>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
